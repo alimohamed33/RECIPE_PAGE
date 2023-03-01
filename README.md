@@ -26,16 +26,12 @@
 
 ## Table of Contents
 
-- [Features](#features)
-- [How to use](#how-to-use)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
 ### Built With
 
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [HTML](https://html.com/)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)

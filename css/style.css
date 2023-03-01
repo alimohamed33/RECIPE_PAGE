@@ -1,0 +1,195 @@
+/* General rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* General rules */
+/* font-family: 'Playfair Display', serif; */
+
+/* Header */
+header {
+  margin-top: 52px;
+}
+header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+header p {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  width: 620px;
+
+  margin-top: 12px;
+  margin-bottom: 45px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+header p img {
+  width: 24px;
+  height: 24px;
+}
+header .container > img {
+  width: 100%;
+}
+/* End Header */
+
+/* Main */
+main .choices-list {
+  margin-top: 48px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+main div h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+main .choices-list > div > p {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+main .choices-list label {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 18px;
+  font-weight: 400;
+
+  width: 600px;
+}
+main .choices-list label:not(:last-child) {
+  margin-bottom: 12px;
+}
+main .choices-list label input {
+  min-width: 21px;
+  height: 21px;
+}
+.choices-list .instructions {
+  padding: 57px 44px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px #0000001a;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 42px;
+}
+.choices-list .instructions article {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.choices-list .instructions article:first-child i,
+.choices-list .instructions article:first-child p {
+  color: #f2994a;
+}
+.choices-list .instructions article i {
+  width: 28px;
+  height: 28px;
+}
+.choices-list .instructions article span {
+  color: #bdbdbd;
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+.choices-list .instructions article div {
+  margin-top: -6px;
+}
+.choices-list .instructions article div p {
+  font-size: 14px;
+}
+main .container div:nth-child(2) h3 {
+  margin: 28px 0;
+}
+main ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  width: 600px;
+}
+main ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+main ul li span {
+  display: block;
+  font-size: 24px;
+  padding: 18px;
+  background-color: #f2994a;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #a9a9a9;
+  margin-top: 115px;
+  margin-bottom: 30px;
+}
+footer a {
+  text-decoration: none;
+  color: #a9a9a9;
+  font-weight: bold;
+}
+/* Footer */
+
+@media (max-width: 992px) {
+  header h2 {
+    font-size: 24px;
+  }
+  header p {
+    width: 100%;
+  }
+  main .choices-list {
+    flex-direction: column-reverse;
+  }
+  .choices-list .instructions {
+    flex-direction: row;
+    box-shadow: none;
+    padding-left: 0;
+    padding-bottom: 30px;
+    padding-right: 0;
+
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 20px;
+  }
+  .choices-list .instructions article:first-child {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  main ul,
+  main .choices-list label {
+    width: 100%;
+  }
+}
+/* End Main */
